@@ -4,9 +4,35 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>org.plugin</groupId>
     <artifactId>EmptyProject</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <developers>
+        <developer>
+            <id>lvshnik</id>
+            <name>Nikita Levshin</name>
+            <email>levshinno@yandex.ru</email>
+            <url>https://www.github.com/nikitalevshin</url>
+            <organization>Effective mobile</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>Russia/Moscow</timezone>
+            <properties>
+            </properties>
+        </developer>
+    </developers>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.plugin</groupId>
+                <artifactId>maven-dev-info-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </plugin>
+        </plugins>
+    </build>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
